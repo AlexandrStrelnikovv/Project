@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Http;
-use Symfony\Component\Routing\Attribute\Route;
+use FastRoute\RouteCollector;
+use function FastRoute\simpleDispatcher;
 
 class Kernel
 {
@@ -12,11 +13,17 @@ class Kernel
 
     public function handle() : Response 
     {
-        $content = '<div>Test</div>';
-        $test = new Route('/', 'get',);
+        $dispatcher = simpleDispatcher(function (RouteCollector $collector) 
+        {
+            $collector->get('/', function () 
+                {
+                    return new Response('test', '401', 'test');
+                });
+        });
 
-        dd($test);
-        return new Response($content, '301', '');
+        $info = $dispatcher->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
+        [$status, $handler, $vars] = $info;
+        return $handler($vars);
     }
 
 }

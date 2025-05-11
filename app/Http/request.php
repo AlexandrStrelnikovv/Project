@@ -22,8 +22,9 @@ class Request
         return new static($_GET, $_POST, $_SERVER, $_SESSION = [], $_COOKIE, $_FILES);
     }
     
-    public function get()
-    {
-        return self::$get;
+    public function getURI()
+    {   
+        $data = $this->server['REQUEST_URI'];
+        return strtok($data, '?');
     }
 }
