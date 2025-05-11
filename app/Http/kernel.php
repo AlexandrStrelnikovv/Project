@@ -24,6 +24,8 @@ class Kernel
         $info = $dispatcher->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
         [$status, $handler, $vars] = $info;
         return $handler($vars);
+        //
+        //
     }
 
 }
