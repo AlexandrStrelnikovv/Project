@@ -27,4 +27,5 @@ class Request
         $data = $this->server['REQUEST_URI'];
         return strtok($data, '?');
     }
+
 }
