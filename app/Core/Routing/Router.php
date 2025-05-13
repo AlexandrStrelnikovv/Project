@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Routing;
+namespace App\Core\Routing;
 
+use App\Http\Request;
 use FastRoute\RouteCollector;
 use function FastRoute\simpleDispatcher;
-use App\Http\Request;
 
 class Router
 {
@@ -12,7 +12,7 @@ class Router
     {
     }
 
-    public function routing() 
+    public function routing() :array
     {
         $dispatcher = simpleDispatcher(function (RouteCollector $collector) 
         {

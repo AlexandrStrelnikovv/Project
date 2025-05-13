@@ -1,7 +1,5 @@
 <?php
 
-
-use App\Http\app;
 use App\Http\Request;
 use App\Http\Kernel;
 

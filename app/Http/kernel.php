@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http;
-use App\Http\Routing\Router;
+use App\Core\Routing\Router;
 
 class Kernel
 {
