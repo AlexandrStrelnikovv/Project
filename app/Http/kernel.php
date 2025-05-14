@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http;
-use App\Core\Routing\Router;
+use App\Routing\Router;
 
 class Kernel
 {
@@ -17,7 +17,4 @@ class Kernel
         $route = call_user_func_array([new $controller, $method], $vars);
         return $route; 
     }
-        
-        
-
 }

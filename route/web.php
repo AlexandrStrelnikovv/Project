@@ -1,7 +1,7 @@
 <?php
 
 use App\Controllers\ArticleController;
-use App\Core\Routing\Route;
+use App\Routing\Route;
 
 
 Route::get('/', [ArticleController::class, 'index']);

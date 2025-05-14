@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core\Routing;
+namespace App\Routing;
 
 use App\Http\Request;
 use FastRoute\RouteCollector;
@@ -24,8 +24,21 @@ class Router
             }
         });
 
-        $info = $dispatcher->dispatch($_SERVER['REQUEST_METHOD'], $_SERVER['REQUEST_URI']);
+        $info = $dispatcher->dispatch(($this->request)->getMethod(), ($this->request)->getURI());
         [$status, [$controller, $method], $vars] = $info;
+
+        $this->routeCheck($status);
         return ['status' => $status, 'controller' => $controller, 'method' => $method, 'vars' => $vars];
+    }
+
+    public function routeCheck(int $status) :void
+    {
+        switch ($status)
+        {
+            case 0:
+                dd('Страница не найдена');
+            case 2:
+                dd('Ошибка 405 (Method Not Allowed)');
+        }
     }
 }

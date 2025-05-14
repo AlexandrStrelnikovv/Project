@@ -3,17 +3,17 @@
 namespace App\Controllers;
 
 use App\Http\Response;
-
-class ArticleController 
+use App\controllers\Controller;
+class ArticleController extends Controller
 {
     public function index()
         {
-            return new Response('test1', '301', 'test');
+            return new Response('Main page', '301', 'test');
         }
 
     public function  getArticle()
     {
-        return new Response('test2', '301', 'test');
+        return new Response('article', '301', 'test');
     }
 
     public function artice(int $id)
