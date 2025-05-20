@@ -1,22 +1,21 @@
 <?php
 
 namespace App\Http;
-use Symfony\Component\Routing\Attribute\Route;
+use App\Routing\Router;
+use League\Container\Container;
 
 class Kernel
 {
-    public function __construct(private readonly Request $request)
+    public Container $container;
+    public function __construct(private readonly Request $request, Container $container)
     {
-
+        $this->container = $container;
     }
 
     public function handle() : Response 
     {
-        $content = '<div>Test</div>';
-        $test = new Route('/', 'get',);
-
-        dd($test);
-        return new Response($content, '301', '');
+        $routerInfo = $this->container->get('Router-class')->routing();
+        extract($routerInfo);
+        return $this->container->get('ArticleController-class')->$method();
     }
-
 }

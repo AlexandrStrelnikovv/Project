@@ -2,7 +2,7 @@
 
 namespace App\Http;
 
-class Request 
+readonly class Request
 {
     public function __construct
     (
@@ -22,8 +22,15 @@ class Request
         return new static($_GET, $_POST, $_SERVER, $_SESSION = [], $_COOKIE, $_FILES);
     }
     
-    public function get()
-    {
-        return self::$get;
+    public function getURI() :string
+    {   
+        $data = $this->server['REQUEST_URI'];
+        return strtok($data, '?');
     }
+
+    public function getMethod() :string
+    {
+        return $this->server['REQUEST_METHOD'];
+    }
+
 }

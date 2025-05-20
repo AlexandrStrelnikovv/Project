@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Http;
+
 class app
 {
     public function index()
