@@ -1,7 +1,7 @@
-<?php 
+<?php
 
 namespace App\Http;
-class Response 
+class Response
 {
     public function __construct
     (

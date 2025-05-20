@@ -2,19 +2,20 @@
 
 namespace App\Http;
 use App\Routing\Router;
+use League\Container\Container;
 
 class Kernel
 {
-    public function __construct(private readonly Request $request)
+    public Container $container;
+    public function __construct(private readonly Request $request, Container $container)
     {
-
+        $this->container = $container;
     }
 
     public function handle() : Response 
     {
-        $routerInfo = (new Router($this->request))->routing();
+        $routerInfo = $this->container->get('Router-class')->routing();
         extract($routerInfo);
-        $route = call_user_func_array([new $controller, $method], $vars);
-        return $route; 
+        return $this->container->get('ArticleController-class')->$method();
     }
 }
