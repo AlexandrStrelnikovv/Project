@@ -1,9 +1,8 @@
 <?php
 
-use App\Controllers\ArticleController;
-use App\Routing\Route;
+use App\controllers\ArticleController;
+use App\routing\Route;
 
 
 Route::get('/', [ArticleController::class, 'index']);
-Route::get('/index/article', [ArticleController::class, 'getArticle']);
-Route::get('/article/{id:\d+}', [ArticleController::class, 'article']);
+Route::get('/createTask', [ArticleController::class, 'createTask']);

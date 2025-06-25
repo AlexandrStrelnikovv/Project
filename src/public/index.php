@@ -7,7 +7,7 @@ define('BASE_PATH', dirname(__DIR__));
 require '../vendor/autoload.php';
 require BASE_PATH . '/Routes/web.php';
 
-$container = require BASE_PATH . '/app/Container/Services.php';
+$container = require BASE_PATH . '/app/container/Services.php';
 
 $kernel = $container->get('Kernel-class')->handle();
 $kernel->send();

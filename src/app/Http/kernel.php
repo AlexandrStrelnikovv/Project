@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http;
-use App\Routing\Router;
+use App\routing\Router;
 use League\Container\Container;
 
 class Kernel

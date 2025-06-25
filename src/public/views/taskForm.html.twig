@@ -1,0 +1,54 @@
+{% extends 'index.html.twig' %}
+
+{% block content %}
+<section class="task-form-section">
+    <h2 class="section-title">
+        <span>✏️</span>
+        <span>Создать новую задачу</span>
+    </h2>
+
+    <form id="task-form">
+        <div class="form-row">
+            <div class="input-group" style="flex: 2;">
+                <label for="task-title">Название задачи</label>
+                <input type="text" id="task-title" placeholder="Что нужно сделать?">
+            </div>
+
+            <div class="input-group">
+                <label for="task-priority">Приоритет</label>
+                <select id="task-priority">
+                    <option value="low">Низкий</option>
+                    <option value="medium" selected>Средний</option>
+                    <option value="high">Высокий</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="task-description">Описание</label>
+                <textarea id="task-description" placeholder="Детали задачи..."></textarea>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="input-group">
+                <label for="task-date">Срок выполнения</label>
+                <input type="date" id="task-date">
+            </div>
+
+            <div class="input-group">
+                <label for="task-category">Категория</label>
+                <select id="task-category">
+                    <option value="work">Работа</option>
+                    <option value="personal">Личное</option>
+                    <option value="study">Учёба</option>
+                    <option value="other">Другое</option>
+                </select>
+            </div>
+        </div>
+
+        <button type="button" class="btn btn-primary">Добавить задачу</button>
+    </form>
+</section>
+{% endblock %}

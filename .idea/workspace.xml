@@ -4,7 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f80bbdac-237a-4b9e-8b30-c1b15aa745f4" name="Changes" comment="twig, doctrine, docker container" />
+    <list default="true" id="f80bbdac-237a-4b9e-8b30-c1b15aa745f4" name="Changes" comment="twig, doctrine, docker container">
+      <change afterPath="$PROJECT_DIR$/src/app/console/Kernel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/database/db/DB.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/Task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/models/UserModel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/views/components/header.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/views/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/views/style/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/views/taskForm.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/public/views/taskList.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/nginx/default.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/default.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/docker/php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Config/db.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/config/db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Container/Services.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/container/Services.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Controllers/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/controllers/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Controllers/Controller.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Models/Test.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Routing/Route.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routing/Route.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Routing/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/routing/Router.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/index.html.twig" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +66,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/Http/kernel.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:/xampp/php/php.exe">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:/php/php.exe">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
@@ -71,33 +103,13 @@
       <path value="$PROJECT_DIR$/src/vendor/twig/twig" />
       <path value="$PROJECT_DIR$/src/vendor/nikic/fast-route" />
       <path value="$PROJECT_DIR$/src/vendor/league/container" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/cache" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/cache-contracts" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/deprecation-contracts" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/dotenv" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-ctype" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-grapheme" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-mbstring" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php84" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/service-contracts" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/string" />
       <path value="$PROJECT_DIR$/src/vendor/symfony/var-dumper" />
-      <path value="$PROJECT_DIR$/src/vendor/symfony/var-exporter" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/collections" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/dbal" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/deprecations" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/event-manager" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/inflector" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/instantiator" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/lexer" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/orm" />
-      <path value="$PROJECT_DIR$/src/vendor/doctrine/persistence" />
       <path value="$PROJECT_DIR$/src/vendor/composer" />
-      <path value="$PROJECT_DIR$/src/vendor/psr/cache" />
       <path value="$PROJECT_DIR$/src/vendor/psr/container" />
-      <path value="$PROJECT_DIR$/src/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/src/vendor/gabordemooij/redbean" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
@@ -112,37 +124,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "PHPUnit.app.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Project/views",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;PHPUnit.app.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Project&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\views" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\src\public\views\components" />
+      <recent name="D:\Project\src\public\views" />
+      <recent name="D:\Project\src\public" />
+      <recent name="D:\Project\src\app" />
       <recent name="D:\Project" />
-      <recent name="D:\Project\app" />
-      <recent name="D:\Project\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -159,8 +174,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PS-251.25410.148" />
-        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.25410.148" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PS-251.26094.133" />
+        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.26094.133" />
       </set>
     </attachedChunks>
   </component>
@@ -198,7 +213,26 @@
       <workItem from="1748769266231" duration="1034000" />
       <workItem from="1748871878448" duration="3000" />
       <workItem from="1749045283833" duration="4395000" />
-      <workItem from="1749137774954" duration="2584000" />
+      <workItem from="1749137774954" duration="3807000" />
+      <workItem from="1749486021243" duration="745000" />
+      <workItem from="1749642906501" duration="1000" />
+      <workItem from="1749748262612" duration="7000" />
+      <workItem from="1750083902876" duration="5775000" />
+      <workItem from="1750167876612" duration="3216000" />
+      <workItem from="1750172150301" duration="1177000" />
+      <workItem from="1750173493818" duration="2167000" />
+      <workItem from="1750175701914" duration="130000" />
+      <workItem from="1750175882604" duration="117000" />
+      <workItem from="1750253770506" duration="11111000" />
+      <workItem from="1750340305170" duration="11938000" />
+      <workItem from="1750429096842" duration="2000" />
+      <workItem from="1750429910809" duration="1000" />
+      <workItem from="1750499791176" duration="56000" />
+      <workItem from="1750524378080" duration="4000" />
+      <workItem from="1750689466478" duration="1134000" />
+      <workItem from="1750773639850" duration="2445000" />
+      <workItem from="1750778877826" duration="6197000" />
+      <workItem from="1750859025721" duration="4595000" />
     </task>
     <task id="LOCAL-00001" summary="Сhanging folders">
       <option name="closed" value="true" />
@@ -264,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749139745163</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="twig, doctrine, docker container">
+      <option name="closed" value="true" />
+      <created>1749140550919</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1749140550919</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Routing;
+namespace App\routing;
 
 use App\Http\Request;
 use FastRoute\RouteCollector;

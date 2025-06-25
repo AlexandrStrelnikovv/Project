@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Routing;
+namespace App\routing;
 Class Route
 {
     public static array $routes = [];
